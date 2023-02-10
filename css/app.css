@@ -5,7 +5,8 @@
     font-family: sans-serif;
 }
 
-#bottone {
+#bottone,
+#refresh-btn {
     color: white;
     font-size: 26px;
     padding: 5px;
@@ -14,8 +15,12 @@
     border-radius: 5px;
 }
 
-#bottone {
+#bottone{
     margin-top: 20px;
+}
+
+#refresh-btn {
+    background-color: rgb(200, 50, 205);
 }
 
 .indicatore {
@@ -23,7 +28,7 @@
     color: white;
 }
 
-.indicatore-bomba {
+.indicatore-bomba{
     background-color: crimson;
     color: white;
 }
