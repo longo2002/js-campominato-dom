@@ -5,24 +5,22 @@
     font-family: sans-serif;
 }
 
-#bottone {
+#bottone,
+#refresh-btn {
     color: white;
     font-size: 26px;
     padding: 5px;
-    margin-top: 15px;
     background-color: limegreen;
     border: 0px;
     border-radius: 5px;
 }
 
+#bottone{
+    margin-top: 20px;
+}
+
 #refresh-btn {
-    color: white;
-    font-size: 26px;
-    padding: 5px;
-    margin-top: 15px;
     background-color: rgb(200, 50, 205);
-    border: 0px;
-    border-radius: 5px;
 }
 
 .indicatore {
@@ -43,13 +41,19 @@
 
 .container-sconfitta{
     display: none;
-    background-color: rgb(238, 232, 232, 0.5);
-    border-radius: 50px;
+    background-color: rgb(238, 232, 232);
+    border-radius: 40px;
     z-index: 99999;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    position: relative;
+    bottom: 600px;
+    margin: 0 15px;
 }
 
 .display{
-    display: block;
+    display: flex;
 }
 
 .griglia {

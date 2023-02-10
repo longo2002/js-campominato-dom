@@ -1,7 +1,8 @@
-console.log('griglia')
-const gridEl = document.querySelector('.griglia')
-let btnEl = document.getElementById("bottone")
-
+console.log("wokrs!")
+const gridEl = document.querySelector(".griglia")
+let bottone = document.getElementById("bottone")
+let retryBtnEl = document.getElementById("refresh-btn")
+let popEl = document.getElementById("popup")
 
 function gridCheck() {
     gridEl.innerHTML = ``
@@ -37,18 +38,22 @@ bottone.addEventListener("click",
 
         }
 
-        const cellEl = document.querySelectorAll('.cella')
+        const cellEl = document.querySelectorAll(".cella")
 
         for (let i = 0; i < cellEl.length; i++) {
             let num = i + 1
             const cell = cellEl[i]
-            cell.addEventListener('click', function () {
+            cell.addEventListener("click", function cellCheck() {
                 if (bombPosition.includes(num)){
                     cell.classList.toggle("indicatore-bomba")
                 } else {
                     cell.classList.toggle("indicatore")
                 }
-                
+                if(cell.classList.contains("indicatore-bomba")) {
+                    popEl.classList.add("display")
+                    bottone.removeEventListener("click", function myFunction(){})
+                    cell.removeEventListener("click", function cellCheck(){})
+                }  
             })
         }
         
@@ -57,3 +62,8 @@ bottone.addEventListener("click",
 
 
 
+retryBtnEl.addEventListener("click",
+function refreshFunction() {
+    window.location.reload(true)
+}
+)
