@@ -2,7 +2,7 @@ console.log('griglia')
 const gridEl = document.querySelector('.griglia')
 let btnEl = document.getElementById("bottone")
 
-function gridCheck(){
+function gridCheck() {
     gridEl.innerHTML = ``
 }
 
@@ -35,13 +35,17 @@ bottone.addEventListener("click",
     }
 )
 
-const bombPosition = Array(16) 
-				.fill()
-				.map(() => Math.floor(100 * Math.random()+1)); 
+const bombPosition = []
+ 
+do {
+    const randomNumber = Math
+        .floor(Math.random() * 100) + 1
+
+    if (!bombPosition.includes(randomNumber)) {
+        bombPosition.push(randomNumber);
+    }
+  
+} while (bombPosition.length < 16);
 
 console.log(bombPosition);
-
-
-
-
 
