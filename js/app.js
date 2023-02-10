@@ -9,7 +9,7 @@ function gridCheck() {
 }
 
 const bombPosition = []
- 
+
 do {
     const randomNumber = Math
         .floor(Math.random() * 100) + 1
@@ -17,7 +17,7 @@ do {
     if (!bombPosition.includes(randomNumber)) {
         bombPosition.push(randomNumber);
     }
-  
+
 } while (bombPosition.length < 16);
 
 console.log(bombPosition);
@@ -44,26 +44,26 @@ bottone.addEventListener("click",
             let num = i + 1
             const cell = cellEl[i]
             cell.addEventListener("click", function cellCheck() {
-                if (bombPosition.includes(num)){
+                if (bombPosition.includes(num)) {
                     cell.classList.toggle("indicatore-bomba")
                 } else {
                     cell.classList.toggle("indicatore")
                 }
-                if(cell.classList.contains("indicatore-bomba")) {
+                if (cell.classList.contains("indicatore-bomba")) {
                     popEl.classList.add("display")
-                    bottone.removeEventListener("click", function myFunction(){})
-                    cell.removeEventListener("click", function cellCheck(){})
-                }  
+                    bottone.removeEventListener("click", function myFunction() { })
+                    cell.removeEventListener("click", function cellCheck() { })
+                }
             })
         }
-        
+
     }
 )
 
 
 
 retryBtnEl.addEventListener("click",
-function refreshFunction() {
-    window.location.reload(true)
-}
+    function refreshFunction() {
+        window.location.reload(true)
+    }
 )

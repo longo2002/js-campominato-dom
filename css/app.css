@@ -15,7 +15,7 @@
     border-radius: 5px;
 }
 
-#bottone{
+#bottone {
     margin-top: 20px;
 }
 
@@ -28,7 +28,7 @@
     color: white;
 }
 
-.indicatore-bomba{
+.indicatore-bomba {
     background-color: crimson;
     color: white;
 }
@@ -39,7 +39,7 @@
     padding: 15px;
 }
 
-.container-sconfitta{
+.container-sconfitta {
     display: none;
     background-color: rgb(238, 232, 232);
     border-radius: 40px;
@@ -52,7 +52,7 @@
     margin: 0 15px;
 }
 
-.display{
+.display {
     display: flex;
 }
 
