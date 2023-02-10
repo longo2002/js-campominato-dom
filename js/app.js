@@ -49,11 +49,11 @@ bottone.addEventListener("click",
                 } else {
                     cell.classList.toggle("indicatore")
                 }
-                if (cell.classList.contains("indicatore-bomba")) {
+                if(cell.classList.contains("indicatore-bomba")) {
                     popEl.classList.add("display")
-                    bottone.removeEventListener("click", function myFunction() { })
-                    cell.removeEventListener("click", function cellCheck() { })
-                }
+                    bottone.removeEventListener("click", function myFunction(){})
+                    cell.removeEventListener("click", function cellCheck(){})
+                }  
             })
         }
 
@@ -63,7 +63,7 @@ bottone.addEventListener("click",
 
 
 retryBtnEl.addEventListener("click",
-    function refreshFunction() {
-        window.location.reload(true)
-    }
+function refreshFunction() {
+    window.location.reload(true)
+}
 )

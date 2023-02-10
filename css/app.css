@@ -5,8 +5,7 @@
     font-family: sans-serif;
 }
 
-#bottone,
-#refresh-btn {
+#bottone {
     color: white;
     font-size: 26px;
     padding: 5px;
@@ -17,10 +16,6 @@
 
 #bottone {
     margin-top: 20px;
-}
-
-#refresh-btn {
-    background-color: rgb(200, 50, 205);
 }
 
 .indicatore {
@@ -39,7 +34,7 @@
     padding: 15px;
 }
 
-.container-sconfitta {
+.container-sconfitta{
     display: none;
     background-color: rgb(238, 232, 232);
     border-radius: 40px;
@@ -52,7 +47,7 @@
     margin: 0 15px;
 }
 
-.display {
+.display{
     display: flex;
 }
 
