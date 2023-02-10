@@ -1,14 +1,18 @@
 console.log('griglia')
+const gridEl = document.querySelector('.griglia')
 let btnEl = document.getElementById("bottone")
+
+function gridCheck(){
+    gridEl.innerHTML = ``
+}
 
 bottone.addEventListener("click",
     function myFunction() {
-        btnEl.classList.add("nodisplay")
 
+        gridCheck()
 
         let gridSide = 10
         let playArea = gridSide * gridSide
-        const gridEl = document.querySelector('.griglia')
 
         for (let i = 0; i < playArea; i++) {
             let num = i + 1
@@ -31,13 +35,11 @@ bottone.addEventListener("click",
     }
 )
 
-let refresh = document.getElementById("refresh-btn")
-refresh.addEventListener("click",
-    function refreshFunction() {
-        window.location.reload(true)
-    }
-)
+const bombPosition = Array(16) 
+				.fill()
+				.map(() => Math.floor(100 * Math.random()+1)); 
 
+console.log(bombPosition);
 
 
 

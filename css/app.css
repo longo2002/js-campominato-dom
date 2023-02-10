@@ -25,10 +25,6 @@
     border-radius: 5px;
 }
 
-.nodisplay {
-    display: none;
-}
-
 .indicatore {
     background-color: green;
     color: white;
